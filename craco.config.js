@@ -5,11 +5,10 @@ const WebpackManifestPlugin =
   ManifestPluginModule;
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   eslint: {
-    enable: false, // désactive eslint-loader (remplacé ci-dessous)
+    enable: false, // désactive eslint-loader (obsolète avec react-scripts 5)
   },
   babel: {
     plugins: [
@@ -78,13 +77,6 @@ module.exports = {
             }
             return file;
           },
-        })
-      );
-
-      // ✅ Ajout du plugin ESLint compatible Webpack 4
-      webpackConfig.plugins.push(
-        new ESLintPlugin({
-          extensions: ["js", "jsx"], // adapte si tu utilises TS
         })
       );
 
