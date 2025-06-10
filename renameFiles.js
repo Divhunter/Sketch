@@ -4,6 +4,11 @@ const path = require("path");
 const buildPath = path.join(__dirname, "build", "static");
 
 function renameFiles(dir, ext) {
+  if (!fs.existsSync(dir)) {
+    console.log(`Directory not found: ${dir}`);
+    return;
+  }
+
   const files = fs.readdirSync(dir).filter(file => file.startsWith("main.") && file.endsWith(ext));
 
   if (files.length > 0) {
@@ -18,8 +23,6 @@ function renameFiles(dir, ext) {
 
 // Renommer les fichiers JS et CSS
 renameFiles(path.join(buildPath, "js"), ".js");
-// renameFiles(path.join(buildPath, "js"), ".js.map");
 renameFiles(path.join(buildPath, "css"), ".css");
-// renameFiles(path.join(buildPath, "css"), ".css.map");
 
 console.log("Renaming completed.");
