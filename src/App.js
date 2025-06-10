@@ -10,7 +10,6 @@ import SketchTchat from './pages/SketchTchat'
 import  CGU from './pages/CGU'
 import Error from './_utils/Error'
 
-import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // styles
