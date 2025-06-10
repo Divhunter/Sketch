@@ -9,19 +9,19 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = {
   eslint: {
-    enable: false, // désactive eslint-loader (remplacé ci-dessous)
+    enable: false, // désactive eslint-loader intégré (on utilise eslint-webpack-plugin)
   },
   babel: {
     plugins: [
       ["@babel/plugin-proposal-class-properties", { loose: true }],
       ["@babel/plugin-transform-private-methods", { loose: true }],
       ["@babel/plugin-proposal-private-property-in-object", { loose: true }],
-      "@babel/plugin-proposal-optional-chaining"
+      "@babel/plugin-proposal-optional-chaining",
     ],
   },
   webpack: {
     configure: (webpackConfig) => {
-      // Activer HMR et Live Reload
+      // DevServer
       webpackConfig.devServer = {
         ...webpackConfig.devServer,
         hot: true,
@@ -35,19 +35,22 @@ module.exports = {
         poll: 1000,
       };
 
-      // Support fichiers .mjs
+      // Sécurité : vérifier que rules existe et est un tableau
+      if (!Array.isArray(webpackConfig.module.rules)) {
+        webpackConfig.module.rules = [];
+      }
       webpackConfig.module.rules.push({
         test: /\.mjs$/,
         include: /node_modules/,
         type: "javascript/auto",
       });
 
-      // Supprimer l'ancien ManifestPlugin
+      // Supprimer les anciennes instances de ManifestPlugin
       webpackConfig.plugins = webpackConfig.plugins.filter(
         (plugin) => !(plugin instanceof WebpackManifestPlugin)
       );
 
-      // Fichiers JS/CSS nommés proprement
+      // Config output JS/CSS
       webpackConfig.output.filename = "static/js/[name].js";
       webpackConfig.output.chunkFilename = "static/js/[name].chunk.js";
 
@@ -62,7 +65,7 @@ module.exports = {
         return plugin;
       });
 
-      // Réinjection du nouveau ManifestPlugin
+      // Réinjection ManifestPlugin
       webpackConfig.plugins.push(
         new WebpackManifestPlugin({
           fileName: "asset-manifest.json",
@@ -81,12 +84,20 @@ module.exports = {
         })
       );
 
-      // ✅ Ajout du plugin ESLint compatible Webpack 4
-      webpackConfig.plugins.push(
-        new ESLintPlugin({
-          extensions: ["js", "jsx"], // adapte si tu utilises TS
-        })
+      // Ajout ESLintPlugin si pas déjà présent
+      const hasESLintPlugin = webpackConfig.plugins.some(
+        (plugin) => plugin instanceof ESLintPlugin
       );
+      if (!hasESLintPlugin) {
+        webpackConfig.plugins.push(
+          new ESLintPlugin({
+            extensions: ["js", "jsx"],
+          })
+        );
+      }
+
+      // Debug length rules (optionnel, à supprimer si trop verbeux)
+      console.log("webpackConfig.module.rules.length:", webpackConfig.module.rules.length);
 
       return webpackConfig;
     },

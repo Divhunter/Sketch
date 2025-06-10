@@ -43,7 +43,6 @@
     "react-phone-input-2": "^2.15.1",
     "react-player": "^2.12.0",
     "react-router-dom": "^6.30.0",
-    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
     "react-toastify": "^11.0.5",
     "react-tooltip": "^5.28.1",
@@ -82,7 +81,8 @@
     "@craco/craco": "^5.9.0",
     "cross-env": "^7.0.3",
     "eslint-webpack-plugin": "^2.7.0",
-    "mini-css-extract-plugin": "0.9.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "react-scripts": "^4.0.3",
     "webpack": "4.42.0",
     "webpack-manifest-plugin": "2.2.0"
   }
