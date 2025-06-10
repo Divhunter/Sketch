@@ -1,0 +1,13 @@
+.triangle2Info {
+    margin: 0 18.5vw 0 18.5vw;
+}
+
+.triangle1Info {
+    border-bottom : 7vw solid white;
+}
+
+.triangle2Info,
+.triangle3Info {
+    border-bottom : 7vw solid rgb(87, 90, 94);
+    /*border-bottom : 7vw solid rgb(176, 183, 192);*/
+}

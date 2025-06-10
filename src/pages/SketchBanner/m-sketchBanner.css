@@ -1,0 +1,27 @@
+.sketchBanner__container__triangle {
+    border-bottom : 7vw solid rgb(87, 90, 94);
+}
+
+.triangle2Banner {
+    margin: 0 18.5vw 0 18.5vw;
+}
+
+.sketchBanner-logo {
+    position: relative;
+    top: 10vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    margin-bottom: 12.5vw;
+}
+
+.sketchBanner-plume {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35vw;
+    height: auto;
+    rotate: -12deg;
+    margin-bottom: 20vw;
+}

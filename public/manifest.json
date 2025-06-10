@@ -1,0 +1,37 @@
+{
+  "short_name": "sketchview",
+  "name": "sketchview - dessinateur indistruel 3D",
+  "icons": [
+    {
+      "src": "sketchview-logo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "sketchview-logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "sketchview-logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?v=2",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "description": "sketchview - Web & Mobile Development | Application web & mobile sur mesure, SEO, API REST",
+  "lang": "fr-FR",
+  "orientation": "portrait",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "cache": {
+    "static": {
+      "max-age": 31536000,
+      "immutable": true
+    }
+  }
+}

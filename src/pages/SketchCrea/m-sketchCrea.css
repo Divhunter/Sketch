@@ -1,0 +1,49 @@
+.triangle2Crea {
+    margin: 0 18.5vw 0 18.5vw;
+}
+
+.triangle2Crea {
+    border-bottom : 7vw solid white;
+}
+
+.triangle1Crea,
+.triangle3Crea {
+    border-bottom : 7vw solid rgb(87, 90, 94);
+    /*border-bottom : 7vw solid rgb(176, 183, 192);*/
+}
+
+.sketchCrea__containerImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.sketchCrea__containerImg--img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.img1, 
+.img2, 
+.img3 {
+    margin: 8vw auto 8vw auto;
+}
+
+.img4 {
+    margin: 8vw auto auto auto;
+}
+
+.img1, 
+.img2, 
+.img4 {
+    cursor: zoom-in;
+}
+
+.img3 {
+    cursor: pointer;
+}

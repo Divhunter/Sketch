@@ -1,0 +1,88 @@
+{
+  "name": "sketchviewapp",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://www.sketchview.fr",
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.5.0",
+    "bootstrap": "^5.3.6",
+    "dotenv": "^16.3.1",
+    "emailjs-com": "^3.2.0",
+    "fix": "^0.0.3",
+    "font-awesome": "^4.7.0",
+    "formik": "^2.4.4",
+    "framer-motion": "^7.10.3",
+    "gsap": "^3.12.2",
+    "html-react-parser": "^4.0.0",
+    "jquery": "^3.7.0",
+    "jwt-decode": "^3.1.2",
+    "lottie-react": "^2.4.1",
+    "preact-render-to-string": "^6.2.0",
+    "react": "^18.3.1",
+    "react-activity": "^2.1.3",
+    "react-confirm-alert": "^3.0.6",
+    "react-dom": "^18.3.1",
+    "react-dotenv": "^0.1.3",
+    "react-google-recaptcha": "^3.1.0",
+    "react-helmet-async": "^2.0.3",
+    "react-icons": "^5.5.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-paginate": "^8.3.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-player": "^2.12.0",
+    "react-router-dom": "^6.30.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.9",
+    "react-toastify": "^11.0.5",
+    "react-tooltip": "^5.28.1",
+    "socket.io-client": "^4.8.1",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5",
+    "yup": "^1.2.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider craco start",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider craco build && node renameFiles.js",
+    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider craco test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.27.1",
+    "@babel/plugin-transform-private-methods": "^7.27.1",
+    "@craco/craco": "^5.9.0",
+    "cross-env": "^7.0.3",
+    "mini-css-extract-plugin": "0.9.0",
+    "webpack": "4.42.0",
+    "webpack-manifest-plugin": "2.2.0"
+  }
+}

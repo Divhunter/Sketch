@@ -1,0 +1,77 @@
+.triangle2Tchat {
+    margin: 0 18.5vw 0 18.5vw;
+}
+
+.triangle3Tchat {
+    border-bottom : 7vw solid white;
+}
+
+.triangle1Tchat,
+.triangle2Tchat {
+    border-bottom : 7vw solid rgb(87, 90, 94);
+    /*border-bottom : 7vw solid rgb(176, 183, 192);*/
+}
+
+.sketchTchat__containerImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.sketchTchat__containerImg--img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.img1, 
+.img2, 
+.img3 {
+    margin: 8vw auto 8vw auto;
+}
+
+.img4 {
+    margin: 8vw auto auto auto;
+}
+
+.img1, 
+.img2, 
+.img4 {
+    cursor: zoom-in;
+}
+
+.img3 {
+    cursor: pointer;
+}
+
+.sketch__contact__buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    margin-top: 2vw;
+}
+
+.sketch__contact__buttons__pic {
+    position: relative;
+    width: 38vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sketchT__Form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10vw;
+    background-color: transparent;
+}

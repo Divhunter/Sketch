@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("https://www.sketchview.fr/assets/fonts/Poppins/Poppins-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('https://www.sketchview.fr/assets/fonts/Poppins/Poppins-SemiBold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src:  url("https://www.sketchview.fr/assets/fonts/Poppins/Poppins-ExtraLight.woff2") format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Komigo3D-Regular";
+    src: url("https://www.sketchview.fr/assets/fonts/komigo/Komigo3D-Regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "HeyAugust";
+    src: url("https://www.sketchview.fr/assets/fonts/heyAugust/HeyAugust.woff2") format("woff2");
+    font-display: swap;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Poppins-Regular", sans-serif;
+    font-display: swap;
+    color: rgb(176, 183, 192);
+    overflow-x: hidden;
+    background-color: rgb(45,49,54);
+}

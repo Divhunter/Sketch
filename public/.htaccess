@@ -1,0 +1,20 @@
+# Cache des fichiers statiques pendant 1 an
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+</IfModule>
+
+# Désactive la mise en cache pour le Service Worker
+<FilesMatch "service-worker.js">
+  Header set Cache-Control "no-store, no-cache, must-revalidate, proxy-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires "0"
+</FilesMatch>
+
+# Déclenche une nouvelle version SW automatiquement
+<FilesMatch "\.(webp|avif|png|jpg|woff2|js|css)$">
+  Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>

@@ -1,0 +1,400 @@
+/**********************************************************************************************/
+/********************************************** app *******************************************/
+/**********************************************************************************************/
+
+header,
+footer, 
+section, 
+article {
+    overflow: hidden;
+    background-color: white;
+}
+
+section {
+    position: relative;
+    margin-top: -1px; 
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/*ul, li {
+    list-style:none;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+}*/
+
+input, textarea ,Link,a{
+    border: 0;
+    text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea {
+    border: 0;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+}
+
+.sketch {
+    position: relative;
+    margin-top: 45.6vw;
+    width: 100%;
+    height: auto;
+    padding: 0 5vw 0 5vw;
+    background-color: rgb(45,49,54);
+    animation: reveal1 ease 2s normal forwards 1;
+}
+
+@keyframes reveal1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.sketch__container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: start;
+    width: 100%;
+    height: 10vw;
+}
+
+.sketch__container__triangle {
+    position: relative;
+    top: 0;
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 3.5vw solid transparent;
+    border-left : 3.5vw solid transparent;
+    transform: rotate(180deg);
+    background-color: transparent;
+}
+
+h1.sketch__title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    font-family: "Komigo3D-Regular", sans-serif;
+    font-size: 8vw;
+    letter-spacing: 2vw;
+    color: white;
+}
+
+h1.sketch__title span {
+    font-family: "HeyAugust", sans-serif;
+    font-weight: normal;
+    font-size: 5vw;
+    letter-spacing: 1vw;
+}
+
+.sketch__title-plume {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15vw;
+    height: auto;
+    rotate: -12deg;
+    margin-bottom: 7vw;
+}
+
+header {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+header span.title {
+    position: relative;
+    font-family: "HeyAugust", sans-serif;
+    font-weight: normal;
+    font-size: 6vw;
+}
+
+header span.title-underline {
+    position: relative;
+    display: block;
+    margin: 4vw auto 0 auto;
+    width: 1vw;
+    height: 0.5vw;
+    background-color: white;
+}
+
+.separator {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 86vw;
+    height: auto;
+    margin: 5vw 0 5vw 0;
+}
+
+.separator_line {
+    position: relative;
+    background-color: rgb(241,162,49);
+}
+
+.separator_line1 {
+    height: 1vw;
+    margin-bottom: 1vw;
+}   
+
+.separator_line2 {
+    height: .5vw;
+}
+
+.sketch__text {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-size: 3.91vw;
+    font-weight: 200;
+    line-height: 6.3vw;
+    letter-spacing: .15vw;
+    color: rgb(176, 183, 192);
+}
+
+.sketch__text--center {
+    text-align: center;
+}
+
+.sketch__text--start {
+    text-align: start;
+}
+
+ul.sketch__text--ulMargin {
+    margin: -3.8vw auto 0 -3.4vw;
+}
+
+ul li span.sketch__span1 {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-weight: 200;
+    color: rgb(88, 132, 189);
+    /*color: rgb(58,113,183);*/
+}
+
+p span.sketch__span1,
+P li span.sketch__span1 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    color: rgb(88, 132, 189);
+    /*color: rgb(58,113,183);*/
+}
+
+p span.sketch__span2, 
+ul li span.sketch__span2,
+P li span.sketch__span2 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    color: rgb(241,162,49);
+}
+
+p span.sketch__span3,
+ul li span.sketch__span3 {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-weight: 200;
+    color: white; 
+}
+
+p span.sketch__span4,
+ul li span.sketch__span4,
+p li span.sketch__span4 {
+    color: white;
+}
+
+p span.sketch__span5,
+ul li span.sketch__span5 {
+    font-style: italic;
+    color: white;
+}
+
+p span.sketch__span6,
+ul li span.sketch__span6 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+p span.sketch__span7,
+ul li span.sketch__span7 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(241,162,49);
+}
+
+p span.sketch__span8,
+ul li span.sketch__span8 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(88, 132, 189);
+    /*color: rgb(58,113,183);*/
+}
+
+p span.sketch__span9,
+ul li span.sketch__span9,
+p li span.sketch__span9 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(88, 132, 189);
+}
+
+p span.sketch__span10,
+ul li span.sketch__span10 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(241,162,49);
+}
+
+p span.sketch__span11,
+ul li span.sketch__span11 {
+    font-family: "Poppins-Regular", sans-serif;
+    font-weight: 500;
+    letter-spacing: .22vw;
+    color: white;
+}
+
+p span.sketch__span12,
+P li span.sketch__span12 {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-weight: 200;
+    color: rgb(88, 132, 189);
+}
+
+p span.sketch__span13,
+P li span.sketch__span13 {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: white;
+}
+
+p span.sketch__span14,
+P li span.sketch__span14 {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-weight: 200;
+    color: rgb(241,162,49);
+}
+
+p li.sketch__text__listOne {
+    list-style: none;
+    margin-left: 13vw;
+}
+
+.arrow-down {
+    width: 10vw;
+    height: auto;
+    opacity: .6;
+} 
+
+.arrow-left {
+	font-size: 6.5vw;
+	color: rgb(10, 86, 109);
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.logout__btn {
+	font-size: 6vw;
+	color: rgb(10, 86, 109);
+	transition: color .4s;
+	cursor: pointer;
+	z-index: 500;
+}
+
+.logout__btn:hover,
+.arrow-left:hover {
+	color: rgb(52, 190, 167);
+	transition: color .4s;
+}
+
+.logout__btn:active,
+.arrow:active {
+	color: rgb(17, 142, 180);
+}
+
+.x-delete {
+    float: right;
+    font-size: 4vw;
+    color: rgb(10, 86, 109);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.x-delete:hover {
+    color: red ;
+    opacity:1
+}
+
+/**********************************************************************************************/
+/********************************************* form *******************************************/
+/**********************************************************************************************/
+
+.loader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%; /* Largeur à 100% pour occuper tout l'espace de l'élément parent */
+    height: 100%; /* Hauteur à 100% pour occuper tout l'espace de l'élément parent */
+    background: linear-gradient(rgb(17, 29, 39), rgb(108, 121, 129));
+}
+
+/********************************************* media queries ************************************************/
+/************************** New rules if the screen is at more 450px ****************************************/
+
+@media screen and (min-width: 451px) {
+
+    /**********************************************************************************************/
+    /***************************************** contact-form ***************************************/
+    /**********************************************************************************************/
+
+    .arrow-down {
+        width: 40px;
+    }
+
+    .arrow-left {
+        font-size: 28px;
+    }
+
+    .logout__btn {
+		font-size: 28px;
+	}
+
+    .x-delete {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,116 @@
+.custom-form {
+    padding-top: 0 !important;
+    margin-top: -5vw !important;
+    padding: 10vw 5vw 10vw 5vw !important;
+    background-color: rgb(38, 42, 46) !important;
+    box-shadow: rgba(189, 189, 189, 0.2) 0px 7px 29px 0px !important;
+}
+
+.form-label {
+    display: none;
+}
+
+.custom-input,
+.custom-textarea,
+.custom-phone-input .form-control {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-size: 3.91vw;
+    font-weight: 200;
+    line-height: 6.3vw;
+    letter-spacing: 0.15vw;
+    color: white;
+}
+
+.custom-input,
+.custom-textarea,
+.custom-phone-input-field {
+    background-color: rgb(38, 42, 46) !important;
+    border: 1px solid white !important;
+    color: white !important;
+    border-radius: 1rem !important;
+    transition: border 0.3s ease;
+    width: 100%;
+}
+
+.custom-input::placeholder,
+.custom-textarea::placeholder,
+.custom-phone-input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.custom-input:focus,
+.custom-textarea:focus,
+.custom-phone-input-field:focus,
+.custom-input:hover,
+.custom-textarea:hover,
+.custom-phone-input-field:hover {
+    border-color: rgb(241, 162, 49) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Pour PhoneInput */
+.phone-container {
+    width: 100% !important;
+}
+
+.custom-phone-input-field {
+    height: calc(1.5em + .75rem + 2px);
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem;
+}
+
+.custom-phone-flag {
+    background-color: rgb(38, 42, 46) !important;
+    border: 1px solid white !important;
+    border-radius: 1rem 0 0 1rem !important;
+}
+
+.custom-phone-flag:hover {
+    border-color: rgb(241, 162, 49) !important;
+}  
+
+.custom-submit-btn {
+    background-color: rgb(241, 162, 49) !important;
+    color: black !important;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.custom-submit-btn:hover,
+.custom-submit-btn:focus {
+    background-color: rgb(88, 132, 189) !important;
+    color: black !important;
+    outline: none;
+    box-shadow: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-submit-btn:active {
+    color: white !important;
+}
+
+::placeholder {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-size: 3.91vw;
+    font-weight: 200;
+    line-height: 6.3vw;
+    letter-spacing: 0.15vw;
+    color: rgb(176, 183, 192);
+    opacity: 1; /* Nécessaire pour Firefox */
+}
+
+/* Pour les navigateurs spécifiques (Safari/Edge) */
+input::placeholder,
+textarea::placeholder,
+.custom-phone-input input::placeholder {
+    font-family: "Poppins-ExtraLight", sans-serif;
+    font-size: 3.91vw;
+    font-weight: 200;
+    line-height: 6.3vw;
+    letter-spacing: 0.15vw;
+    color: rgb(176, 183, 192);
+}

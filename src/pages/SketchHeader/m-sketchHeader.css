@@ -1,0 +1,63 @@
+.sketchHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 5vw;
+    background-color: white;
+    z-index: 10000;
+}
+
+.sketchHeader__nav {
+    position: relative;
+    padding: 2vw 2vw 0 2vw;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+.sketch-logo {
+    position: relative;
+    width: 18vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.sketchHeader__nav__menu {
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 18vw;
+    padding: 0 15vw 0 15vw;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.sketchHeader__nav__menu__picture {
+    position: relative;
+    cursor: pointer;
+    width: 15vw;
+    height: auto;
+}
+
+/*.flash {
+    animation: flash-effect 0.3s ease-in-out;
+}
+
+@keyframes flash-effect {
+    0% {
+    opacity: 1;
+    transform: scale(1);
+    }
+    50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+    }
+    100% {
+    opacity: 1;
+    transform: scale(1);
+    }
+}*/
