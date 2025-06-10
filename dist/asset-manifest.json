@@ -1,8 +1,0 @@
-{
-  "main.js": "/static/js/main.js",
-  "main.js.map": "/static/static/js/main.chunk.js.map",
-  "runtime-main.js": "/static/static/js/runtime-main.js",
-  "runtime-main.js.map": "/static/static/js/runtime-main.js.map",
-  "vendors~main.js": "/static/static/js/vendors~main.chunk.js",
-  "vendors~main.js.map": "/static/static/js/vendors~main.chunk.js.map"
-}
