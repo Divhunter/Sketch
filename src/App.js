@@ -20,6 +20,7 @@ const App = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
+        window.location.href = "https://sketchviewcreation.wixsite.com/svcreation";
     }, [])
 
     return (
